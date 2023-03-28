@@ -1,3 +1,25 @@
 backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "_site/images/uploads"
+public_folder: "/images/uploads"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+
+collections:
+  - name: "posts" # Used in routes, e.g., /admin/collections/blog
+    label: "Posts" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Cover", name: "cover", widget: "image"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Post Body", name: "body", widget: "markdown"}
