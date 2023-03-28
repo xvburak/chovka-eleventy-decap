@@ -1,0 +1,26 @@
+{
+  "name": "chovka-eleventy-decap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xvburak/chovka-eleventy-decap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xvburak/chovka-eleventy-decap/issues"
+  },
+  "homepage": "https://github.com/xvburak/chovka-eleventy-decap#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
