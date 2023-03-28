@@ -28,10 +28,13 @@ module.exports = eleventyConfig => {
         return result;
     });
 
-	return {
-		dir: {
-			input: 'src'
-		}
-	}
-
-};
+    return {
+        passthroughFileCopy: true,
+        dir: {
+          input: "src",
+          output: "_site"
+        },
+    
+      };
+    
+    };
